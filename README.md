@@ -43,7 +43,7 @@ La arquitectura ha sido validada experimentalmente, demostrando que la "ceguera 
     * `Isomorfismo_IA.pdf`: Artículo completo detallando el operador *Stride-6* y el análisis económico. 
     * `Isomorfismo_IA.tex`: Código fuente LaTeX.
 * **`Notebooks/`**: Código de validación y experimentos.
-    * [`VALIDACION_Z_6Z_IA.ipynb`](Notebooks/VALIDACION_Z_6Z_IA.ipynb): Notebook ejecutable que reproduce:
+    * [VALIDACION_Z_6Z_IA](https://colab.research.google.com/github.com/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Notebooks/VALIDACION_Z_6Z_IA.ipynb):
         - **Prueba de Isomorfismo Tensorial**: Verificación matemática de la descomposición $C = A \times B$ con error $< 10^{-5}$ .
         - **Hex-Ensemble en MNIST**: Entrenamiento de 6 workers ciegos con agregación de votos .
         - **Análisis de Monte Carlo**: Test estadístico que confirma la reducción del overfitting en Transformers Modulares.
