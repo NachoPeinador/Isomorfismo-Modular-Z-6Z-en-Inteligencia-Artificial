@@ -1,110 +1,91 @@
-# Isomorfismo Modular en Inteligencia Artificial: Del Anillo $\mathbb{Z}/6\mathbb{Z}$ a NPUs de Arquitectura Shared-Nothing
+# Isomorfismo Modular en Inteligencia Artificial: Del Anillo $\mathbb{Z}/6\mathbb{Z}$ a NPUs Shared-Nothing
 
 [![License: PolyForm Noncommercial](https://img.shields.io/badge/License-PolyForm_Noncommercial_1.0.0-red.svg)](LICENSE)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![Platform](https://img.shields.io/badge/Platform-PyTorch_%7C_CUDA-orange.svg)](notebooks/hex_ensemble_mnist.ipynb)
-[![Status](https://img.shields.io/badge/Status-Validated_(MNIST_97%25)-success.svg)]()
-[![DOI](https://img.shields.io/badge/DOI-Preprint_Pending-lightgrey)](https://zenodo.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
+[![Platform](https://img.shields.io/badge/Platform-Google_Colab_%7C_Linux-orange.svg)](Notebooks/VALIDACION_Z_6Z_IA.ipynb)
+[![Status](https://img.shields.io/badge/Status-Validated_(p_value_<_0.05)-success.svg)]()
+[![DOI](https://img.shields.io/badge/DOI-Pending-blue)]()
 
 **Autor:** José Ignacio Peinador Sala  
 **Contacto:** [joseignacio.peinador@gmail.com](mailto:joseignacio.peinador@gmail.com)  
-**ORCID:** [0009-0008-1822-3452](https://orcid.org/0009-0008-1822-3452)
+**ORCID:** [0009-0008-1822-3452](https://orcid.org/0009-0008-1822-3452) 
 
 ---
 
 ## 📜 Resumen Ejecutivo
 
-Este repositorio contiene la **implementación de referencia** y la validación experimental de la arquitectura **Hex-Ensemble**, una propuesta de hardware para IA basada en el principio de **"Shared-Nothing"** (Sin Compartición).
+Este repositorio presenta una nueva arquitectura para Inteligencia Artificial basada en el **Isomorfismo Modular**, diseñada para romper la dependencia de los chips monolíticos de alta densidad .
 
-Frente al paradigma monolítico actual que enfrenta límites termodinámicos, este trabajo propone el uso del **Isomorfismo Modular** bajo el anillo $\mathbb{Z}/6\mathbb{Z}$ para descomponer redes neuronales profundas en seis sub-redes independientes. Esto permite reemplazar las costosas interconexiones de baja latencia y las matrices de silicio de 3nm por un "enjambre" de *chiplets* económicos de 28nm, logrando una reducción de costes de **18x** sin sacrificar significativamente la precisión predictiva.
+Utilizando el anillo $\mathbb{Z}/6\mathbb{Z}$, demostramos que es posible descomponer redes neuronales profundas (MLPs y Transformers) en un "enjambre" de 6 sub-redes independientes (*Shared-Nothing*) . Esta topología elimina la necesidad de coherencia de caché global y permite la construcción de NPUs mediante **chiplets de 28nm**, reduciendo los costes de fabricación en **18x** frente a los nodos de 3nm .
 
-![Esquema NPU Hex-Ensemble](img/hex_npu_arch.png)
-*> Esquema conceptual: Distribución determinista de tensores mediante bus de diezmado pasivo hacia 6 núcleos aislados.*
-
----
-
-## 🚀 Hitos de Validación
-
-La arquitectura ha sido validada experimentalmente demostrando que la falta de comunicación entre nodos (*Shared-Nothing*) actúa como un regularizador estructural eficiente, permitiendo un rendimiento competitivo con una fracción del coste.
-
-| Experimento | Modelo Base | Precisión Monolítica | Precisión Modular (Hex) | Gap |
-| :--- | :--- | :--- | :--- | :--- |
-| **Visión (CV)** | MLP (MNIST) | 98.10% | **97.03%** | -1.07% |
-| **Lenguaje (NLP)** | Transformer | 100.00% | **94.75%** | -5.25% |
-| **Eficiencia** | **Coste Silicio** | $666.67 (3nm) | **$37.92 (28nm)** | **-94% (18x)** |
+![Diagrama Hex-NPU](Images/Hex_Ensemble.png)
+*> Esquema de la NPU Hex-Ensemble: Distribución pasiva de datos y procesamiento en 6 núcleos aislados sin comunicación cruzada.* 
 
 ---
 
-## 📂 Estructura del Repositorio
+## 🚀 Hito de Validación: Robustez y Generalización Inversa
 
-* **`src/`**: Código fuente del motor modular.
-    * `hex_layers.py`: Implementación de capas `Linear` y `Attention` con soporte nativo para Stride-6.
-    * `hex_ensemble.py`: Orquestador de los 6 workers aislados y lógica de *Logit Mixing*.
-* **`paper/`**: Manuscrito científico unificado (LaTeX/PDF).
-    * **"Isomorfismo Modular en Inteligencia Artificial: Del Anillo $\mathbb{Z}/6\mathbb{Z}$ a NPUs de Arquitectura Shared-Nothing"**.
-* **`notebooks/`**: Experimentos reproducibles.
-    * `Hex_Ensemble_MNIST_Validation.ipynb`: Entrenamiento y validación en clasificación de dígitos.
-    * `Modular_Transformer_PoC.ipynb`: Prueba de concepto de atención modular distribuida.
-* **`analysis/`**: Modelos económicos.
-    * `yield_wafer_model.xlsx`: Hoja de cálculo del modelo de costes (Yield/Wafer) comparando nodos de 28nm vs 3nm.
+La arquitectura ha sido validada experimentalmente, demostrando que la "ceguera parcial" de los módulos actúa como un potente regularizador estructural.
+
+| Métrica | Resultado Validado | Referencia |
+| :--- | :--- | :--- |
+| **Precisión MNIST** | **97.03%** (vs 98.10% Monolítico) | |
+| **Transformer (Val)** | **94.75%** (Gap de Generalización Inverso) | |
+| **Robustez Estadística** | **p-value = 0.0112** (Monte Carlo N=10) | *Notebook Analysis* |
+| **Reducción de Coste** | **18x** (Arbitraje de Nodos 28nm vs 3nm) | |
+| **Aislamiento** | **Total (Shared-Nothing)** | |
+
+---
+
+## 📂 Estructura del Repositorio y 💻 Reproducibilidad
+
+* **`Paper/`**: Manuscrito científico y demostraciones teóricas.
+    * `Isomorfismo_IA.pdf`: Artículo completo detallando el operador *Stride-6* y el análisis económico. 
+    * `Isomorfismo_IA.tex`: Código fuente LaTeX.
+* **`Notebooks/`**: Código de validación y experimentos.
+    * [`VALIDACION_Z_6Z_IA.ipynb`](Notebooks/VALIDACION_Z_6Z_IA.ipynb): Notebook ejecutable que reproduce:
+        - **Prueba de Isomorfismo Tensorial**: Verificación matemática de la descomposición $C = A \times B$ con error $< 10^{-5}$ .
+        - **Hex-Ensemble en MNIST**: Entrenamiento de 6 workers ciegos con agregación de votos .
+        - **Análisis de Monte Carlo**: Test estadístico que confirma la reducción del overfitting en Transformers Modulares.
+* **`Images/`**: Diagramas de arquitectura y gráficas de convergencia.
 
 ---
 
 ## ⚙️ Innovación Técnica
 
-### 1. Operador de Diezmado Modular (Tensor Stride-6)
-Formalizamos un operador matemático $\mathcal{P}_r$ que proyecta cualquier tensor de entrada en 6 sub-espacios disjuntos basándose en la congruencia $i \equiv r \pmod 6$. Esto transforma el problema de multiplicación de matrices densas en 6 problemas independientes de menor dimensión, isomorfos a la **Descomposición Polifase** en DSP.
+### 1. Operador de Proyección Modular (Stride-6)
+Formalizamos un operador $\mathcal{P}_r$ que proyecta tensores densos en 6 sub-espacios disjuntos basándose en congruencias modulares . Esto permite transformar operaciones matriciales globales en operaciones locales paralelizables.
 
-### 2. Arquitectura "Shared-Nothing"
-Cada uno de los 6 *Workers* opera con su propia memoria SRAM local y no tiene acceso físico a la memoria de los demás. Esto elimina la necesidad de coherencia de caché y buses de alto ancho de banda, permitiendo una escalabilidad lineal teórica ilimitada y reduciendo drásticamente el consumo energético por movimiento de datos.
+### 2. Regularización por "Ceguera Parcial"
+Descubrimos un fenómeno de **Gap de Generalización Inverso** . Al impedir que cada worker vea el 83% de los datos, el sistema se ve forzado a aprender características robustas, evitando la memorización del ruido (Overfitting) y superando a los modelos densos en datos de validación .
 
-### 3. Arbitraje de Nodos (Economic Moat)
-La arquitectura permite fabricar chips de IA de alto rendimiento utilizando nodos de litografía maduros (28nm) en lugar de nodos de vanguardia (3nm). Aprovechando el mayor *Yield* (rendimiento de oblea) de los chips pequeños y baratos, se logra una ventaja económica masiva frente a las GPUs monolíticas.
+### 3. Economía de Chiplets (Arbitraje de Nodos)
+El diseño permite utilizar procesos de litografía maduros (28nm) para obtener rendimiento competitivo. Al evitar las retículas grandes y los defectos de los nodos de 3nm, el coste efectivo por transistor cae drásticamente, democratizando el acceso a hardware de IA de alto rendimiento .
 
 ---
 
 ## ⚖️ Licencia y Uso (Dual Licensing)
 
-Este proyecto utiliza un modelo de **Licenciamiento Dual** para fomentar la innovación abierta manteniendo la sostenibilidad de la investigación independiente.
+Este proyecto utiliza un modelo de **Licenciamiento Dual** alineado con los principios de la Ciencia Abierta sostenible .
 
-### ✅ Uso Académico y Open Source (Gratuito)
-El código fuente y la documentación están disponibles bajo la licencia **PolyForm Noncommercial License 1.0.0**.
-* **Permitido:** Uso personal, investigación académica, docencia y proyectos de código abierto (sin ánimo de lucro).
-* **Requisito:** Debe atribuir la autoría original y mantener este aviso de licencia.
+### ✅ Uso Académico y No Comercial
+El código fuente se distribuye bajo la licencia **PolyForm Noncommercial License 1.0.0**.
+* **Permitido:** Investigación, educación y uso personal sin ánimo de lucro .
+* **Requisito:** Mantener la atribución y este aviso de licencia.
 
-### ⛔ Uso Comercial (Requiere Licencia)
-**La integración en productos propietarios, servicios de pago o hardware comercial cerrado está prohibida** sin un acuerdo previo. Esto incluye:
-* Aceleradores de hardware (ASIC/FPGA) propietarios.
-* Servicios de inferencia SaaS cerrados.
-* Consultoría comercial basada en esta arquitectura.
+### ⛔ Uso Comercial
+Cualquier uso comercial (productos, servicios SaaS, consultoría) está **estrictamente prohibido** sin acuerdo previo .
 
-> 💼 **Para obtener una Licencia Comercial (exención de Copyleft)**, contacte con el autor: [joseignacio.peinador@gmail.com](mailto:joseignacio.peinador@gmail.com)
-
----
-
-## 💻 Reproducibilidad
-
-Para replicar el experimento de MNIST en su máquina local:
-
-1.  Clone el repositorio.
-2.  Instale las dependencias: `pip install torch torchvision numpy`
-3.  Ejecute el script de entrenamiento:
-    ```bash
-    python src/train_hex_mnist.py --epochs 5 --batch-size 64
-    ```
-
----
+> 💼 **Contacto para Licencias Comerciales:** [joseignacio.peinador@gmail.com](mailto:joseignacio.peinador@gmail.com) 
 
 ## ✍️ Citación
 
-Si utiliza esta arquitectura, el operador Stride-6 o el análisis económico en su investigación, por favor cite el artículo original:
+Si utiliza esta arquitectura o el código en su investigación, por favor cite:
 
 ```bibtex
-@article{PeinadorSala2025_HexNPU,
-  author = {Peinador Sala, José Ignacio},
-  title = {Isomorfismo Modular en Inteligencia Artificial: Del Anillo Z/6Z a NPUs de Arquitectura Shared-Nothing},
-  year = {2025},
-  publisher = {Zenodo},
-  version = {v1.0},
-  doi = {10.5281/zenodo.XXXXXXX}
+@article{peinador2025modular,
+  title={Isomorfismo Modular en Inteligencia Artificial: Del Anillo Z/6Z a NPUs de Arquitectura Shared-Nothing},
+  author={Peinador Sala, José Ignacio},
+  year={2025},
+  publisher={Zenodo}
 }
