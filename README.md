@@ -4,7 +4,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![Platform](https://img.shields.io/badge/Platform-Google_Colab_%7C_Linux-orange.svg)](Notebooks/VALIDACION_Z_6Z_IA.ipynb)
 [![Status](https://img.shields.io/badge/Status-Validated_(p_value_<_0.05)-success.svg)]()
-[![DOI](https://img.shields.io/badge/DOI-Pending-blue)]()
+[![DOI](https://img.shields.io/badge/DOI-Zenodo-blue)](https://doi.org/10.5281/zenodo.17777464)
 
 **Autor:** José Ignacio Peinador Sala  
 **Contacto:** [joseignacio.peinador@gmail.com](mailto:joseignacio.peinador@gmail.com)  
