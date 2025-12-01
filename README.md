@@ -83,7 +83,7 @@ Cualquier uso comercial (productos, servicios SaaS, consultoría) está **estric
 Si utiliza esta arquitectura o el código en su investigación, por favor cite:
 
 ```bibtex
-
+Peinador Sala, J. I. (2025). Modular Isomorphism in Artificial Intelligence: From the Ring Z/6Z to Shared-Nothing Architecture NPUs (Versión v1). Zenodo. https://doi.org/10.5281/zenodo.17777464
 ```
 
 ---
