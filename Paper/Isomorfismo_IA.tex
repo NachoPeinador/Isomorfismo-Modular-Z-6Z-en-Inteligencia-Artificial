@@ -58,14 +58,28 @@
 \maketitle
 
 % ----------------------------------------------------------------------
-% RESUMEN (ABSTRACT)
+% RESUMEN (ABSTRACT) - BILINGÜE
 % ----------------------------------------------------------------------
 \begin{abstract}
-\noindent La escalabilidad de los modelos de Aprendizaje Profundo enfrenta límites físicos en la arquitectura monolítica de Von Neumann, donde el coste energético de mover datos supera al de computarlos. Este trabajo propone una solución basada en el \textbf{Isomorfismo Modular} bajo el anillo $\mathbb{Z}/6\mathbb{Z}$, permitiendo descomponer redes neuronales densas en un ensamble hexagonal de seis sub-redes independientes. Validamos experimentalmente en MNIST (97.03\% de precisión) y Transformers (94.75\% en validación), demostrando que la arquitectura \textit{Shared-Nothing} mantiene rendimiento competitivo mientras elimina la necesidad de interconexiones de baja latencia. Un análisis de robustez Monte Carlo ($N=10$) confirma la significancia estadística ($p < 0.012$) de la reducción del gap de generalización. El análisis económico revela reducciones de coste de 18× mediante \textit{arbitraje de nodos}, utilizando tecnología de 28nm frente a 3nm. Estos resultados establecen las bases para una nueva generación de NPUs modulares basadas en chiplets de bajo coste, democratizando el acceso a computación de alto rendimiento.
+\noindent \textbf{Abstract.} The scalability of Deep Learning models faces physical limits within the monolithic Von Neumann architecture, where the energy cost of data movement exceeds computation. This work proposes a solution based on \textbf{Modular Isomorphism} under the ring $\mathbb{Z}/6\mathbb{Z}$, allowing the decomposition of dense neural networks into a hexagonal ensemble of six independent sub-networks. We experimentally validate on MNIST (97.03\% accuracy) and Transformers (94.75\% validation), demonstrating that the \textit{Shared-Nothing} architecture maintains competitive performance while eliminating the need for low-latency interconnects. A Monte Carlo robustness analysis ($N=10$) confirms the statistical significance ($p < 0.012$) of the generalization gap reduction. Economic analysis reveals 18× cost reductions via \textit{node arbitrage}, utilizing 28nm technology versus 3nm. These results lay the foundation for a new generation of modular NPUs based on low-cost chiplets, democratizing access to high-performance computing.
+
+\vspace{0.2cm}
+\noindent \textbf{Keywords:} Modular NPU, Shared-Nothing Architecture, Chiplets, Modular Isomorphism, Inverse Generalization, Sustainable Computing.
+
+
+%\hrule
+\vspace{0.5cm}
+
+\noindent \textbf{Resumen.} La escalabilidad de los modelos de Aprendizaje Profundo enfrenta límites físicos en la arquitectura monolítica de Von Neumann, donde el coste energético de mover datos supera al de computarlos. Este trabajo propone una solución basada en el \textbf{Isomorfismo Modular} bajo el anillo $\mathbb{Z}/6\mathbb{Z}$, permitiendo descomponer redes neuronales densas en un ensamble hexagonal de seis sub-redes independientes. Validamos experimentalmente en MNIST (97.03\% de precisión) y Transformers (94.75\% en validación), demostrando que la arquitectura \textit{Shared-Nothing} mantiene rendimiento competitivo mientras elimina la necesidad de interconexiones de baja latencia. Un análisis de robustez Monte Carlo ($N=10$) confirma la significancia estadística ($p < 0.012$) de la reducción del gap de generalización. El análisis económico revela reducciones de coste de 18× mediante \textit{arbitraje de nodos}, utilizando tecnología de 28nm frente a 3nm. Estos resultados establecen las bases para una nueva generación de NPUs modulares basadas en chiplets de bajo coste, democratizando el acceso a computación de alto rendimiento.
+
+\vspace{0.2cm}
+\noindent \textbf{Palabras clave:} NPU Modular, Arquitectura Shared-Nothing, Chiplets, Isomorfismo Modular, Generalización Inversa, Computación Sostenible.
 
 \vspace{0.5cm}
-\noindent \textbf{Palabras clave:} NPU Modular, Arquitectura Shared-Nothing, Chiplets, Isomorfismo Modular, $\mathbb{Z}/6\mathbb{Z}$, Eficiencia Energética
+\hrule
+
 \end{abstract}
+
 
 % ----------------------------------------------------------------------
 % SECCIÓN 1: INTRODUCCIÓN
