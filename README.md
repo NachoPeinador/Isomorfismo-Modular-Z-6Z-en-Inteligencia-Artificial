@@ -83,9 +83,14 @@ Cualquier uso comercial (productos, servicios SaaS, consultoría) está **estric
 Si utiliza esta arquitectura o el código en su investigación, por favor cite:
 
 ```bibtex
-@article{peinador2025modular,
-  title={Isomorfismo Modular en Inteligencia Artificial: Del Anillo Z/6Z a NPUs de Arquitectura Shared-Nothing},
-  author={Peinador Sala, José Ignacio},
-  year={2025},
-  publisher={Zenodo}
-}
+
+```
+
+---
+
+## 🔬 Ciencia Independiente y Abierta
+
+> *"La perfección no se alcanza cuando no hay nada más que añadir, sino cuando no hay nada más que quitar."* — **Antoine de Saint-Exupéry**
+
+Este trabajo demuestra que la inteligencia robusta no requiere la complejidad de un monolito interconectado, sino la elegancia de módulos eficientes. Realizado de manera independiente para democratizar el acceso al hardware de alto rendimiento.
+
