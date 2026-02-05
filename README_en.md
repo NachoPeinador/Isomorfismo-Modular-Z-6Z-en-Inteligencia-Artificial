@@ -94,4 +94,4 @@ Peinador Sala, J. I. (2025). Modular Isomorphism in Artificial Intelligence: Fro
 > *"Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."* — **Antoine de Saint-Exupéry**
 
 This work demonstrates that robust intelligence does not require the complexity of an interconnected monolith, but rather the elegance of efficient modules. Conducted independently to democratize access to high-performance hardware.
-```
+
