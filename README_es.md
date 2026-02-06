@@ -1,10 +1,12 @@
 # Isomorfismo Modular en Inteligencia Artificial: Del Anillo $\mathbb{Z}/6\mathbb{Z}$ a NPUs Shared-Nothing
 
+[![Read in English](https://img.shields.io/badge/Lang-Read%20in%20English-blue?style=flat&logoColor=white&color=B31B1B)](https://github.com/NachoPeinador/Arquitectura-de-Hibridacion-Algoritmica-en-Z-6Z/blob/main/README.md)
 [![License: PolyForm Noncommercial](https://img.shields.io/badge/License-PolyForm_Noncommercial_1.0.0-red.svg)](LICENSE)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
-[![Platform](https://img.shields.io/badge/Platform-Google_Colab_%7C_Linux-orange.svg)](Notebooks/VALIDACION_Z_6Z_IA.ipynb)
+[![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Paper/Isomorfismo_IA.pdf)
 [![Status](https://img.shields.io/badge/Status-Validated_(p_value_<_0.05)-success.svg)]()
 [![DOI](https://img.shields.io/badge/DOI-Zenodo-blue)](https://doi.org/10.5281/zenodo.17777464)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Notebooks/VALIDACION_Z_6Z_IA.ipynb)
 
 **Autor:** José Ignacio Peinador Sala  
 **Contacto:** [joseignacio.peinador@gmail.com](mailto:joseignacio.peinador@gmail.com)  
@@ -42,8 +44,10 @@ La arquitectura ha sido validada experimentalmente, demostrando que la "ceguera 
 * **`Paper/`**: Manuscrito científico y demostraciones teóricas.
     * `Isomorfismo_IA.pdf`: Artículo completo detallando el operador *Stride-6* y el análisis económico. 
     * `Isomorfismo_IA.tex`: Código fuente LaTeX.
+    * [![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Paper/Isomorfismo_IA.pdf)
 * **`Notebooks/`**: Código de validación y experimentos.
-    * [VALIDACION_Z_6Z_IA](https://colab.research.google.com/github/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Notebooks/VALIDACION_Z_6Z_IA.ipynb) :
+  
+    *  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Notebooks/VALIDACION_Z_6Z_IA.ipynb)
    
         - **Prueba de Isomorfismo Tensorial**: Verificación matemática de la descomposición $C = A \times B$ con error $< 10^{-5}$ .
         - **Hex-Ensemble en MNIST**: Entrenamiento de 6 workers ciegos con agregación de votos .
@@ -62,6 +66,26 @@ Descubrimos un fenómeno de **Gap de Generalización Inverso** . Al impedir que 
 
 ### 3. Economía de Chiplets (Arbitraje de Nodos)
 El diseño permite utilizar procesos de litografía maduros (28nm) para obtener rendimiento competitivo. Al evitar las retículas grandes y los defectos de los nodos de 3nm, el coste efectivo por transistor cae drásticamente, democratizando el acceso a hardware de IA de alto rendimiento .
+
+---
+
+## 🏛️ Fundamentos Teóricos y Computacionales
+
+Esta arquitectura Hex-NPU es la tercera evolución de la **Teoría del Espectro Modular**. Antes de aplicarse al Cálculo Tensorial y la Inteligencia Artificial, el paradigma *Shared-Nothing* verificó su robustez en la Teoría de Números y la Computación de Alto Rendimiento (HPC).
+
+Las garantías matemáticas del operador **Stride-6** y el **Isomorfismo DSP** se fundamentan en estos dos trabajos precedentes:
+
+### 1. Validación Algorítmica: El Motor $\pi$ a Exaescala
+**Repositorio:** [Arquitectura-de-Hibridacion-Algoritmica-en-Z-6Z](https://github.com/NachoPeinador/Arquitectura-de-Hibridacion-Algoritmica-en-Z-6Z)  
+Demostramos que el **algoritmo de Chudnovsky** (el estándar para calcular $\pi$) podía descomponerse en 6 "canales polifásicos" independientes.
+* **Logro:** Se calcularon **100 Millones de dígitos** de $\pi$ utilizando una arquitectura *Shared-Nothing* con una eficiencia paralela del 95%.
+* **Relevancia para la IA:** Validó que operaciones globales complejas pueden ser isomorfas a operaciones modulares locales sin pérdida de información.
+
+### 2. Génesis Matemática: El Espectro Modular
+**Repositorio:** [Espectro-Modular-Pi](https://github.com/NachoPeinador/Espectro-Modular-Pi)  
+La investigación fundacional que estableció el anillo $\mathbb{Z}/6\mathbb{Z}$ como la estructura óptima para la computación paralela.
+* **Teoría Central:** Demostró que la distribución de números primos ($6k \pm 1$) crea un "Sustrato Primo" natural que permite la separación ortogonal de canales.
+* **Relevancia para la IA:** Proporciona la justificación teórico-numérica de por qué **6 workers** (y no 4 u 8) ofrecen el equilibrio óptimo entre densidad y dispersión de canales.
 
 ---
 
