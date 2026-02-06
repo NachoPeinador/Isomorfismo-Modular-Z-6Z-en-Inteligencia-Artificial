@@ -89,6 +89,24 @@ The foundational research that established the ring $\mathbb{Z}/6\mathbb{Z}$ as 
 * **Core Theory:** Proved that prime number distribution ($6k \pm 1$) creates a natural "Prime Substrate" that allows for orthogonal channel separation.
 * **Relevance to AI:** Provides the number-theoretic justification for why **6 workers** (and not 4 or 8) offer the optimal balance between channel density and sparsity.
 
+## 🚀 The Next Evolution: From Theory to Silicon
+
+The modular decomposition validated in Number Theory (π calculation) and formalized in Tensor Algebra (AI) finds its ultimate expression in a **physical implementation**: a complete chip design optimized for cost, privacy, and sustainability.
+
+### 3. Physical Realization: The FrugalAI Chip
+**Repository:** [FRUGAL_AI_CHIP](https://github.com/NachoPeinador/FRUGAL_AI_CHIP)  
+This research translates the **Shared-Nothing** paradigm into a complete silicon architecture designed for disposable edge AI applications.
+
+* **Key Innovation:** Applies the Stride-6 operator at the hardware level, implementing **Static Slicing**—a compiler that resolves all data routing at compile time, eliminating cache coherence requirements.
+* **Economic Breakthrough:** Achieves **10.9× superior capital efficiency** by leveraging mature 28nm silicon versus cutting-edge 3nm nodes.
+* **Privacy by Design:** Physical isolation of local SRAMs provides **intrinsic privacy** without software overhead.
+* **Experimental Validation:** Demonstrated +4.8% accuracy improvement on CIFAR-10 through implicit ensemble specialization, and 21.47× speedup for Transformer inference.
+
+### 🔄 Complete Research Trajectory
+This completes the research arc: from **mathematical discovery** (π spectrum) → **algorithmic validation** (exascale HPC) → **theoretical formalization** (tensor isomorphism) → **physical implementation** (frugal silicon). Each stage builds upon and validates the modular paradigm, demonstrating its universality across computational domains.
+
+**[👉 Explore the Complete Chip Design & Economics](https://github.com/NachoPeinador/FRUGAL_AI_CHIP/blob/main/README.md)**
+
 ---
 
 ## ⚖️ License and Usage (Dual Licensing)
