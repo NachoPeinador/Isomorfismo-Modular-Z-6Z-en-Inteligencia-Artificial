@@ -5,7 +5,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Paper/Isomorfismo_IA.pdf)
 [![Status](https://img.shields.io/badge/Status-Validated_(p_value_<_0.05)-success.svg)]()
-[![DOI](https://img.shields.io/badge/DOI-Zenodo-blue)](https://doi.org/10.5281/zenodo.17777464)
+[![DOI](https://img.shields.io/badge/DOI-Zenodo-blue)](https://doi.org/10.5281/zenodo.18505586)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Notebooks/VALIDACION_Z_6Z_IA.ipynb)
 
 **Autor:** José Ignacio Peinador Sala  
@@ -108,7 +108,7 @@ Cualquier uso comercial (productos, servicios SaaS, consultoría) está **estric
 Si utiliza esta arquitectura o el código en su investigación, por favor cite:
 
 ```bibtex
-Peinador Sala, J. I. (2025). Modular Isomorphism in Artificial Intelligence: From the Ring Z/6Z to Shared-Nothing Architecture NPUs (Versión v1). Zenodo. https://doi.org/10.5281/zenodo.17777464
+Peinador Sala, J. I. (2025). Modular Isomorphism in Artificial Intelligence: From the Ring Z/6Z to Shared-Nothing Architecture NPUs (Versión v1). Zenodo. https://doi.org/10.5281/zenodo.18505586
 ```
 
 ---
