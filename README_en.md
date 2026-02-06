@@ -65,6 +65,26 @@ The design enables the use of mature lithography processes (28nm) for competitiv
 
 ---
 
+## 🏛️ Theoretical & Computational Foundations
+
+This Hex-NPU architecture is the third evolution of the **Modular Spectrum Theory**. Before being applied to Tensor Calculus and Artificial Intelligence, the *Shared-Nothing* paradigm verified its robustness in Number Theory and High-Performance Computing (HPC).
+
+The mathematical guarantees of the **Stride-6** operator and the **DSP Isomorphism** rely on these two preceding works:
+
+### 1. Algorithmic Validation: The Exascale $\pi$ Engine
+**Repository:** [Arquitectura-de-Hibridacion-Algoritmica-en-Z-6Z](https://github.com/NachoPeinador/Arquitectura-de-Hibridacion-Algoritmica-en-Z-6Z)  
+We proved that the **Chudnovsky algorithm** (the standard for calculating $\pi$) could be decomposed into 6 independent "polyphase channels".
+* **Achievement:** Computed **100 Million digits** of $\pi$ using a *Shared-Nothing* architecture with 95% parallel efficiency.
+* **relevance to AI:** Validated that complex global operations can be isomorphic to local modular operations without information loss.
+
+### 2. Mathematical Genesis: The Modular Spectrum
+**Repository:** [Espectro-Modular-Pi](https://github.com/NachoPeinador/Espectro-Modular-Pi)  
+The foundational research that established the ring $\mathbb{Z}/6\mathbb{Z}$ as the optimal structure for parallel computation.
+* **Core Theory:** Proved that prime number distribution ($6k \pm 1$) creates a natural "Prime Substrate" that allows for orthogonal channel separation.
+* **Relevance to AI:** Provides the number-theoretic justification for why **6 workers** (and not 4 or 8) offer the optimal balance between channel density and sparsity.
+
+---
+
 ## ⚖️ License and Usage (Dual Licensing)
 
 This project uses a **Dual Licensing** model aligned with the principles of sustainable Open Science.
