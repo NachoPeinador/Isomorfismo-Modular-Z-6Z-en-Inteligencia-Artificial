@@ -1,10 +1,12 @@
 # Modular Isomorphism in Artificial Intelligence: From the Ring $\mathbb{Z}/6\mathbb{Z}$ to Shared-Nothing NPUs
 
+[![Read in Spanish](https://img.shields.io/badge/Lang-Leer%20en%20Español-red?style=flat&logoColor=white&color=B31B1B)](https://github.com/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/README_es.md)
 [![License: PolyForm Noncommercial](https://img.shields.io/badge/License-PolyForm_Noncommercial_1.0.0-red.svg)](LICENSE)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
-[![Platform](https://img.shields.io/badge/Platform-Google_Colab_%7C_Linux-orange.svg)](Notebooks/VALIDACION_Z_6Z_IA.ipynb)
+[![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Paper/AI_Modular_Isomorphism.pdf)
 [![Status](https://img.shields.io/badge/Status-Validated_(p_value_<_0.05)-success.svg)]()
 [![DOI](https://img.shields.io/badge/DOI-Zenodo-blue)](https://doi.org/10.5281/zenodo.17777464)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Notebooks/Validation_of_Shared_Nothing.ipynb)
 
 **Author:** José Ignacio Peinador Sala  
 **Contact:** [joseignacio.peinador@gmail.com](mailto:joseignacio.peinador@gmail.com)  
@@ -40,10 +42,14 @@ The architecture has been experimentally validated, demonstrating that the "part
 ## 📂 Repository Structure and 💻 Reproducibility
 
 * **`Paper/`**: Scientific manuscript and theoretical demonstrations.
-    * `Isomorfismo_IA.pdf`: Full article detailing the *Stride-6* operator and economic analysis.
-    * `Isomorfismo_IA.tex`: LaTeX source code.
+    * `AI_Modular_Isomorphism.pdf`: Full article detailing the *Stride-6* operator and economic analysis.
+    * `AI_Modular_Isomorphism.tex`: LaTeX source code.
+      
+    * [![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Paper/AI_Modular_Isomorphism.pdf)
+      
 * **`Notebooks/`**: Validation code and experiments.
-    * [VALIDACION_Z_6Z_IA](https://colab.research.google.com/github/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Notebooks/VALIDACION_Z_6Z_IA.ipynb):
+    
+    * [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Isomorfismo-Modular-Z-6Z-en-Inteligencia-Artificial/blob/main/Notebooks/Validation_of_Shared_Nothing.ipynb)
        
         - **Tensor Isomorphism Test**: Mathematical verification of the decomposition $C = A \times B$ with error $< 10^{-5}$.
         - **Hex-Ensemble on MNIST**: Training of 6 blind workers with vote aggregation.
